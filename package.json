@@ -28,7 +28,10 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
     "start:desktop": "npm run build && electron .",
+    "start:desktop:hot": "node desktop/dev-runner.js",
+    "dev:desktop": "npm run build && bash -lc 'npm run watch & WATCH_PID=$!; node desktop/dev-runner.js; kill $WATCH_PID'",
     "build:desktop": "npm run build && electron-builder --win --dir",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

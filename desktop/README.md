@@ -15,9 +15,13 @@ This folder adds a minimal Electron wrapper so the extension UI can be bundled a
    ```bash
    npm run start:desktop
    ```
-3. Produce a Windows installer (creates `release/` with an NSIS installer):
+3. Run a fast edit/rebuild/restart loop (Webpack watch + Electron auto-restart):
+   ```bash
+   npm run dev:desktop
+   ```
+4. Produce a Windows installer (creates `release/` with an NSIS installer):
    ```bash
    npm run build:desktop
    ```
 
-The Electron window currently loads `dist/options/index.html`, which mirrors the extension's options interface. You can extend `desktop/main.js` and `desktop/preload.js` if you need deeper integration with native Windows APIs (tray icons, global shortcuts, etc.).
+The Electron window currently loads `dist/options/index.html`, which mirrors the extension's options interface. The auto-restart helper is implemented in `desktop/dev-runner.js`. You can extend `desktop/main.js` and `desktop/preload.js` if you need deeper integration with native Windows APIs (tray icons, global shortcuts, etc.).
