@@ -41,7 +41,7 @@ This repository now includes a minimal Electron shell that loads the extension's
 
 1. Build the extension bundle: `npm run build`
 2. Launch the desktop shell for development: `npm run start:desktop`
-3. Use a hot-reload dev loop (auto rebuild + auto restart Electron): `npm run dev:desktop`
+3. Use a hot-reload dev loop (auto build/watch + auto restart Electron): `npm run dev:desktop`
 4. Create a Windows installer (outputs to `release/`): `npm run build:desktop`
 
 The Electron entry point lives in `desktop/main.js`, and you can extend it to wire up native features such as a tray icon or global shortcuts.
