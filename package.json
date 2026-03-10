@@ -27,12 +27,7 @@
     "copy-webpack-plugin": "^12.0.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --config webpack.config.js --watch",
-    "start:desktop": "npm run build && electron .",
-    "start:desktop:hot": "node desktop/dev-runner.js",
-    "dev:desktop": "node desktop/dev-workflow.js",
-    "build:desktop": "npm run build && electron-builder --win",
+    "build": "webpack --config webpack.config.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
