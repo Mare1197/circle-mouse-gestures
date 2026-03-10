@@ -1,7 +1,7 @@
 {
   "name": "circle-mouse-gestures",
   "description": "This extension introduces convenient circle menu (so-called pie menu) to improve interaction with your browser.  Just hold down the right mouse button, highlight one of the actions and release the button.",
-  "main": "webpack.config.js",
+  "main": "desktop/main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emvaized/circle-mouse-gestures.git"
@@ -15,6 +15,8 @@
   "devDependencies": {
     "@mcler/webpack-concat-plugin": "^4.1.6",
     "css-minimizer-webpack-plugin": "^7.0.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
     "json-minimizer-webpack-plugin": "^5.0.0",
     "terser-webpack-plugin": "^5.3.10",
     "webpack": "^5.93.0",
@@ -25,7 +27,28 @@
     "copy-webpack-plugin": "^12.0.2"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js", 
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "start:desktop": "npm run build && electron .",
+    "start:desktop:hot": "node desktop/dev-runner.js",
+    "dev:desktop": "node desktop/dev-workflow.js",
+    "build:desktop": "npm run build && electron-builder --win --dir",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.emvaized.circlemousegestures",
+    "productName": "Circle Mouse Gestures",
+    "files": [
+      "dist/**/*",
+      "desktop/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release",
+      "buildResources": "desktop/resources"
+    },
+    "win": {
+      "target": "nsis"
+    }
   }
 }

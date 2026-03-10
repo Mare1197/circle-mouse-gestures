@@ -32,8 +32,19 @@ Additional tools:
 Get for Firefox <br>
 <a href="https://addons.mozilla.org/firefox/addon/circle-mouse-gestures/"><img src="https://user-images.githubusercontent.com/585534/107280546-7b9b2a00-6a26-11eb-8f9f-f95932f4bfec.png" alt="Get for Firefox"></a>
 
-Get for Chrome (Edge, Brave, Vivaldi etc) <br> 
+Get for Chrome (Edge, Brave, Vivaldi etc) <br>
 <a href="https://chrome.google.com/webstore/detail/circle-mouse-gestures-pie/kkknhbbfjlibfjagilggkcelmcobgefa"><img src="https://developer.chrome.com/static/docs/webstore/branding/image/iNEddTyWiMfLSwFD6qGq.png" alt="Get for Chrome" height=65 /></a>
+
+## Windows native desktop build
+
+This repository now includes a minimal Electron shell that loads the extension's options UI so you can ship the project as a Windows installer.
+
+1. Build the extension bundle: `npm run build`
+2. Launch the desktop shell for development: `npm run start:desktop`
+3. Use a hot-reload dev loop (auto build/watch + auto restart Electron): `npm run dev:desktop`
+4. Create a Windows installer (outputs to `release/`): `npm run build:desktop`
+
+The Electron entry point lives in `desktop/main.js`, and you can extend it to wire up native features such as a tray icon or global shortcuts.
 
 ## FAQ
 Moved to the Wiki page – [read here](https://github.com/emvaized/circle-mouse-gestures/wiki/FAQ-(Frequently-Asked-Questions))
