@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>WinExe</OutputType><UseWindowsForms>true</UseWindowsForms><ApplicationManifest>app.manifest</ApplicationManifest></PropertyGroup>
+  <ItemGroup><ProjectReference Include="..\CircleMouse.Core\CircleMouse.Core.csproj" /><ProjectReference Include="..\CircleMouse.Windows\CircleMouse.Windows.csproj" /></ItemGroup>
+</Project>
