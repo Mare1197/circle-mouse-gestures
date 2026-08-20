@@ -1,0 +1,28 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleMouse.Core", "src\CircleMouse.Core\CircleMouse.Core.csproj", "{456B8174-483D-4AD5-A2A1-77306E9BDA13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleMouse.Windows", "src\CircleMouse.Windows\CircleMouse.Windows.csproj", "{EE23760D-01BA-4289-B368-080B316930AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleMouse.App", "src\CircleMouse.App\CircleMouse.App.csproj", "{489E991B-4E99-4723-AE72-E3FDD5209584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleMouse.Core.Tests", "tests\CircleMouse.Core.Tests\CircleMouse.Core.Tests.csproj", "{D43CC186-6040-4BD8-B52A-71AA9FE451F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{456B8174-483D-4AD5-A2A1-77306E9BDA13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456B8174-483D-4AD5-A2A1-77306E9BDA13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE23760D-01BA-4289-B368-080B316930AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE23760D-01BA-4289-B368-080B316930AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489E991B-4E99-4723-AE72-E3FDD5209584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489E991B-4E99-4723-AE72-E3FDD5209584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D43CC186-6040-4BD8-B52A-71AA9FE451F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D43CC186-6040-4BD8-B52A-71AA9FE451F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

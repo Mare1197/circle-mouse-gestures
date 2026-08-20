@@ -1,0 +1,3 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup><ProjectReference Include="..\CircleMouse.Core\CircleMouse.Core.csproj" /></ItemGroup>
+</Project>

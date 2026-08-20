@@ -1,5 +1,7 @@
 # <sub><img src="./src/assets/icons/icon-new.png" height="48" width="48"></sub> Circle Mouse Gestures
 
+> A from-scratch native Windows system-wide remapping milestone is now available in [`windows/`](windows/README.md), including its architecture and phased implementation plan. The existing browser extension remains available below.
+
 [![Changelog](https://img.shields.io/chrome-web-store/v/kkknhbbfjlibfjagilggkcelmcobgefa?label=version&color=purple)](./CHANGELOG.md)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/kkknhbbfjlibfjagilggkcelmcobgefa?label=users&logo=googlechrome&logoColor=white&color=blue)](https://chrome.google.com/webstore/detail/circle-mouse-gestures-pie/kkknhbbfjlibfjagilggkcelmcobgefa)
 [![Mozilla Add-on](https://img.shields.io/amo/users/circle-mouse-gestures?color=%23FF6611&label=users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/circle-mouse-gestures/)
